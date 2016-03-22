@@ -1,0 +1,10 @@
+{
+  "name": "QuotingDojo",
+  "description": "QuotingDojo application to keep track of all the profound ninjas",
+  "dependencies": {
+    "angular": "^1.5.2",
+    "body-parser": "^1.13.1",
+    "express": "~4.10.0",
+    "mongoose": "^4.1.1"
+  }
+}
