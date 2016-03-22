@@ -1,1 +1,17 @@
-<h1>PLAYERS</h1>
+<div ng-controller='playersController as playersCtrl'>
+
+	<form>
+		Name: <input type='text' ng-model='playersCtrl.newPlayer.name'>
+		<button ng-click='playersCtrl.addPlayer()'>Add Player</button>
+	</form>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Actions</th>
+		</tr>
+		<tr ng-repeat='player in playersCtrl.players'>
+			<td>{{player.name}}</td>
+			<td><button ng-click='playersCtrl.removePlayer()'></button></td>
+		</tr>
+	</table>
+</div>
